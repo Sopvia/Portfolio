@@ -3,11 +3,13 @@
   --text: #fff;
 }
 body {
-  background-color: var(--background);
   color: var(--text);
-  font-family: "Roboto Mono", monospace;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--background);
 }
 .topbar {
+  margin: 0%;
+  margin: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,4 +17,56 @@ body {
 .topbar img {
   height: 4rem;
   border-radius: 50%;
+}
+a {
+  color: var(--text);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.intro {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+}
+.projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.project {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  padding: 0.5rem;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0.1)
+  );
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  border: 1px solig rgba(255, 255, 255, 0.18);
+  border-radius: 0.5rem;
+  transition: all linear 200ms;
+  text-decoration: none;
+}
+.project:hover {
+  transform: scale(1.05);
+}
+.project hr {
+  width: 100%;
+  border: none;
+  border-top: 1px solid var(--text);
+}
+.project h4 {
+  text-align: center;
+}
+.work-in-progress {
+  font-style: italic;
 }
