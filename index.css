@@ -1,6 +1,8 @@
 :root {
   --background: #000;
   --text: #fff;
+  --win1bg: #ffd571;
+  --windowbar: #e9e9e9;
 }
 body {
   color: var(--text);
@@ -30,6 +32,21 @@ body {
   height: 4rem;
   border-radius: 50%;
 }
+.github {
+  border: 2px solid white;
+  padding: 0.25rem;
+  width: 8rem;
+  background-color: #bae1ff;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-radius: 0.25rem;
+}
+.github button {
+  background-color: white;
+  border-color: white;
+}
 a {
   color: var(--text);
 }
@@ -43,6 +60,37 @@ a {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 4rem;
+  border: 5px solid #ffffff;
+  border-radius: 0.25rem;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
+  margin: 1rem;
+  background-color: var(--win1bg);
+}
+.intro h1 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.introbar {
+  border-bottom: 3px solid #ffffff;
+  padding: 0.5rem;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--windowbar);
+}
+.introbar button {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  background-color: #ffffff;
+  border-color: #ffffff;
+  width: 2rem;
+  height: 1.5rem;
+}
+.buttons {
+  align-items: end;
+  justify-content: space-between;
+  display: flex;
 }
 .projects {
   display: flex;
@@ -82,3 +130,6 @@ a {
 .work-in-progress {
   font-style: italic;
 }
+/* footer {
+  margin: 2rem;
+} */
