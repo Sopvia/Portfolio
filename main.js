@@ -14,4 +14,10 @@ function switchMode() {
   //Mode switch
   let modeSwitch = document.getElementById("mode");
   modeSwitch.classList.toggle("dark");
+
+  //Projects
+  let projects = document.getElementsByClassName("project");
+  for (const project of projects) {
+    project.classList.toggle("dark");
+  }
 }
