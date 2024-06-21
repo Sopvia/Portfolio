@@ -41,6 +41,7 @@
   }
 
   .row {
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
   }
@@ -188,6 +189,7 @@
   }
 
   .projects {
+    box-sizing: border-box;
     width: 100% !important;
   }
 }
