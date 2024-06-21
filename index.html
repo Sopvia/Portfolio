@@ -1,84 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
-  <!-- .-'''-.     ,-----.    .-------. ,---.  ,---..-./`)    ____            .-------.     ,-----.    .-------. ,---------.  ________     ,-----.      .---.    .-./`)     ,-----.     
-/ _     \  .'  .-,  '.  \  _(`)_ \|   /  |   |\ .-.') .'  __ `.         \  _(`)_ \  .'  .-,  '.  |  _ _   \\          \|        |  .'  .-,  '.    | ,_|    \ .-.')  .'  .-,  '.   
-(`' )/`--' / ,-.|  \ _ \ | (_ o._)||  |   |  .'/ `-' \/   '  \  \        | (_ o._)| / ,-.|  \ _ \ | ( ' )  | `--.  ,---'|   .----' / ,-.|  \ _ \ ,-./  )    / `-' \ / ,-.|  \ _ \  
-(_ o _).   ;  \  '_ /  | :|  (_,_) /|  | _ |  |  `-'`"`|___|  /  |        |  (_,_) /;  \  '_ /  | :|(_ o _) /    |   \   |  _|____ ;  \  '_ /  | :\  '_ '`)   `-'`"`;  \  '_ /  | : 
-(_,_). '. |  _`,/ \ _/  ||   '-.-' |  _( )_  |  .---.    _.-`   |        |   '-.-' |  _`,/ \ _/  || (_,_).' __  :_ _:   |_( )_   ||  _`,/ \ _/  | > (_)  )   .---. |  _`,/ \ _/  | 
-.---.  \  :: (  '\_/ \   ;|   |     \ (_ o._) /  |   | .'   _    |        |   |     : (  '\_/ \   ;|  |\ \  |  | (_I_)   (_ o._)__|: (  '\_/ \   ;(  .  .-'   |   | : (  '\_/ \   ; 
-\    `-'  | \ `"/  \  ) / |   |      \ (_,_) /   |   | |  _( )_  |        |   |      \ `"/  \  ) / |  | \ `'   /(_(=)_)  |(_,_)     \ `"/  \  ) /  `-'`-'|___ |   |  \ `"/  \  ) /  
-\       /   '. \_/``".'  /   )       \     /    |   | \ (_ o _) /        /   )       '. \_/``".'  |  |  \    /  (_I_)   |   |       '. \_/``".'    |        \|   |   '. \_/``".'   
-`-...-'      '-----'    `---'        `---`     '---'  '.(_,_).'         `---'         '-----'    ''-'   `'-'   '---'   '---'         '-----'      `--------`'---'     '-----'      -->
-  <head>
+<html lang="en"></html>
+    <head>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-      rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+        rel="stylesheet"
     />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sopvia - Portfolio</title>
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="style.css" />
     <script src="main.js"></script>
-  </head>
-
-  <body>
-    <div class="topbar">
-      <img src="https://avatars.githubusercontent.com/u/112272251?v=4" alt="" />
-      <button class="" id="mode" onclick="switchMode()">
-        &#127780;&#65039;/&#127765;
-      </button>
-      <div id="github" class="">
-        <span>Github</span>
-        <button>
-          <a href="https://github.com/Sopvia" target="_blank"> &#128269;</a>
-        </button>
-      </div>
-    </div>
-
-    <!--Intro-->
-    <div class="container">
-      <div id="window" class="">
-        <div class="windowbar">
-          <span>&#128221; Notes</span>
-          <div class="buttons">
-            <button>_</button>
-            <button>&#9744;</button>
-            <button>X</button>
-          </div>
+    </head>
+    
+    <body>
+        <div class="row height-100 width-100">
+            <div class="column height-100 width-100">
+                <div class="topbar row center">
+                    <img src="https://avatars.githubusercontent.com/u/112272251?v=4" alt="" class="pb"/>
+                </div>
+        
+                <div class="main row">
+                    <div class="column aboutMe height-100 width-50">
+                        <div class="row p-10 center">
+                            <h1>About me</h1>
+                        </div>
+                        <div class="row center p-30">
+                            <span>Hi, my name is Sophia. I'm currently training to be an IT specialist. At the moment i'm learning Python, Java and GDscript.</span>
+                        </div>
+                        <div class="row center p-30">
+                            <a href="https://github.com/Sopvia" target="_blank">
+                                <span>Click here for my Github.</span>
+                            </a>
+                        </div>
+                        <div class="row p-10 center">
+                            <h1>My Skills</span>
+                        </div>
+                        <div class="row center p-30 skills">
+                           <img src="img/html.png" alt="Html Logo">
+                           <img src="img/css.png" alt="CSS Logo">
+                           <img src="img/javascript.png" alt="JavaScript Logo">
+                           <img src="img/python.png" alt="Python Logo">
+                        </div>
+                    </div>
+                    <div class="column projects height-100 width-50">
+                        <div class="row p-10 width-100 center">
+                            <h1>Projects</h1>
+                        </div>
+                        <div class="row cards p-10 width-100 center">
+                            <div class="card center p-10">
+                                <a class="height-100" href="https://github.com/Sopvia/PY" target="_blank">
+                                    <div class="row text">
+                                        <div class="column">
+                                            <h3>PY</h3>
+                                            <span class="date">02/May/2024</span>
+                                            <hr>
+                                            <span class="desc">An ordinary Python Password Generator (but cute)</span>    
+                                        </div>                                    
+                                    </div>
+                                    <div class="row lang p-10">
+                                        <img src="img/python.png" alt="Python Logo">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card center p-10">
+                                <a class="height-100" href="https://github.com/Sopvia/RPS" target="_blank">
+                                    <div class="row text">
+                                        <div class="column">
+                                            <h3>RPS (WIP)</h3>
+                                            <span class="date">26/April/2024</span>
+                                            <hr>
+                                            <span class="desc">Rock Paper Scissors Game</span>    
+                                        </div>                                    
+                                    </div>
+                                    <div class="row lang p-10">
+                                        <img src="img/python.png" alt="Python Logo">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card center p-10">
+                                <a class="height-100" href="https://github.com/Sopvia/Stopwatch.js" target="_blank">
+                                    <div class="row text">
+                                        <div class="column">
+                                            <h3>Stopwatch.js</h3>
+                                            <span class="date">14/June/2023</span>
+                                            <hr>
+                                            <span class="desc">Stopwatch in JavaScript</span>    
+                                        </div>                                    
+                                    </div>
+                                    <div class="row lang p-10">
+                                        <img src="img/javascript.png" alt="JavaScript Logo">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <h1>Hi, my name is Sophia,</h1>
-        <h1>I am an aspiring web developer.</h1>
-      </div>
-      <!--Projects-->
-      <div class="projects">
-        <!-- Sims 4 -->
-        <a class="project" href="https://github.com/Sopvia/Sims-4-Cheat-Sheet">
-          <h4>Sims 4 Cheat Sheet</h4>
-          <hr />
-          <span>A Cheat Sheet for Sims 4</span>
-          <span class="work-in-progress">work in progress</span>
-        </a>
-        <!-- Password generator -->
-        <a
-          class="project"
-          href="https://github.com/Sopvia/password.generator.py"
-        >
-          <h4>password.generator.py</h4>
-          <hr />
-          <span>Generates a random cryptographically secure password</span>
-        </a>
-        <!-- Stopwatch -->
-        <a class="project" href="https://github.com/Sopvia/Stopwatch.js">
-          <h4>Stopwatch.js</h4>
-          <hr />
-          <span>Stopwatch in JavaScript</span>
-        </a>
-        <!-- <div class="project"></div> -->
-      </div>
-    </div>
-  </body>
-</html>
+    </body>
+</hmtl>
