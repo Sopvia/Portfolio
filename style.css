@@ -68,12 +68,26 @@
     width: 50%;
   }
 
+  .p-5 {
+    padding: 5px;
+  }
+
   .p-10 {
     padding: 10px;
   }
 
-  .p-30 {
-    padding: 20px;
+  .p-text {
+    padding: 0 20px 0 20px;
+  }
+
+  .m-15 {
+    margin: 15px;
+  }
+
+  .defaultImg {
+    height: 24px;
+    width: 24px;
+    margin: 4px;
   }
 
   h1 {
@@ -92,6 +106,10 @@
     border-top: solid 1px #e5e5e5ee;
   }
 
+  p {
+    margin: 0 10px 0 10px;
+  }
+
   .main {
     position: relative;
     height: 70%;
@@ -107,10 +125,8 @@
     text-decoration: none;
   }
 
-  div.skills img {
-    margin: 4px;
-    height: 24px;
-    width: 24px;
+  .skills {
+    box-sizing: border-box;
   }
 
   .projects {
@@ -121,6 +137,7 @@
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
+    padding: 5px;
   }
 
   .card {
@@ -128,15 +145,11 @@
     height: 210px;
     width: 140px;
     background-color: white;
-    /* color: var(--fontColor); */
-    /* border: solid 1px var(--accentColor); */
     border-radius: 6px;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
       rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-    margin: 10px;
+    margin: 0 10px 10px 20px;
   }
-
-  /* rgba(255, 255, 255, 0.115) */
 
   .card:hover {
     cursor: pointer;
@@ -167,28 +180,24 @@
     justify-content: center;
   }
 
-  .lang > img {
-    height: 24px;
-    width: 24px;
-    margin: 4px;
-  }
-
   div.card > a {
     color: var(--fontColor);
     text-decoration: none;
   }
 }
+
 @media (max-width: 576px) {
   .main {
     flex-wrap: wrap;
   }
 
   .aboutMe {
+    height: auto !important;
     width: 100% !important;
   }
 
   .projects {
-    box-sizing: border-box;
+    height: auto !important;
     width: 100% !important;
   }
 }

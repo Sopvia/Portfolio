@@ -13,7 +13,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sopvia - Portfolio</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="main.js"></script>
     </head>
     
     <body>
@@ -26,43 +25,46 @@
                 <div class="main row">
                     <div class="column aboutMe height-100 width-50">
                         <div class="row p-10 center">
-                            <h1>About me</h1>
+                            <h1 id="aboutMe" class="">About me</h1>
                         </div>
-                        <div class="row center p-30">
-                            <span>Hi, my name is Sophia. I'm currently training to be an IT specialist. At the moment i'm learning Python, Java and GDscript.</span>
+                        <div class="row center p-text">
+                            <p id="intro">Hi, my name is Sophia. I'm currently training to be an IT specialist. At the moment i'm learning Python, Java and GDscript.</p>
                         </div>
-                        <div class="row center p-30">
+                        <div class="row center p-text m-15">
+                            <p id="github">Click here for my Github profile.</p>
+                        </div>
+                        <div class="row center">
                             <a href="https://github.com/Sopvia" target="_blank">
-                                <span>Click here for my Github.</span>
+                                <img src="img/github.png" alt="Github Logo" class="defaultImg">
                             </a>
                         </div>
                         <div class="row p-10 center">
-                            <h1>My Skills</span>
+                            <h1 id="skills">My Skills</h1>
                         </div>
-                        <div class="row center p-30 skills">
-                           <img src="img/html.png" alt="Html Logo">
-                           <img src="img/css.png" alt="CSS Logo">
-                           <img src="img/javascript.png" alt="JavaScript Logo">
-                           <img src="img/python.png" alt="Python Logo">
+                        <div class="row center skills">
+                           <img src="img/html.png" alt="Html Logo" class="defaultImg">
+                           <img src="img/css.png" alt="CSS Logo" class="defaultImg">
+                           <img src="img/javascript.png" alt="JavaScript Logo" class="defaultImg">
+                           <img src="img/python.png" alt="Python Logo" class="defaultImg">
                         </div>
                     </div>
                     <div class="column projects height-100 width-50">
                         <div class="row p-10 width-100 center">
-                            <h1>Projects</h1>
+                            <h1 id="projects">Projects</h1>
                         </div>
-                        <div class="row cards p-10 width-100 center">
+                        <div class="row cards width-100 center">
                             <div class="card center p-10">
                                 <a class="height-100" href="https://github.com/Sopvia/PY" target="_blank">
                                     <div class="row text">
                                         <div class="column">
                                             <h3>PY</h3>
-                                            <span class="date">02/May/2024</span>
+                                            <span class="date">02/05/2024</span>
                                             <hr>
-                                            <span class="desc">An ordinary Python Password Generator (but cute)</span>    
+                                            <span id="descPY" class="desc">An ordinary Python Password Generator (but cute)</span>    
                                         </div>                                    
                                     </div>
                                     <div class="row lang p-10">
-                                        <img src="img/python.png" alt="Python Logo">
+                                        <img src="img/python.png" alt="Python Logo" class="defaultImg">
                                     </div>
                                 </a>
                             </div>
@@ -71,13 +73,13 @@
                                     <div class="row text">
                                         <div class="column">
                                             <h3>RPS (WIP)</h3>
-                                            <span class="date">26/April/2024</span>
+                                            <span class="date">26/04/2024</span>
                                             <hr>
-                                            <span class="desc">Rock Paper Scissors Game</span>    
+                                            <span id="descRPS" class="desc">Rock Paper Scissors Game</span>    
                                         </div>                                    
                                     </div>
                                     <div class="row lang p-10">
-                                        <img src="img/python.png" alt="Python Logo">
+                                        <img src="img/python.png" alt="Python Logo" class="defaultImg">
                                     </div>
                                 </a>
                             </div>
@@ -86,13 +88,13 @@
                                     <div class="row text">
                                         <div class="column">
                                             <h3>Stopwatch.js</h3>
-                                            <span class="date">14/June/2023</span>
+                                            <span class="date">14/06/2023</span>
                                             <hr>
-                                            <span class="desc">Stopwatch in JavaScript</span>    
+                                            <span id="descSW" class="desc">Stopwatch in JavaScript</span>    
                                         </div>                                    
                                     </div>
                                     <div class="row lang p-10">
-                                        <img src="img/javascript.png" alt="JavaScript Logo">
+                                        <img src="img/javascript.png" alt="JavaScript Logo" class="defaultImg">
                                     </div>
                                 </a>
                             </div>
