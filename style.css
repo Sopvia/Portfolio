@@ -4,6 +4,7 @@
   --dateColor: #b3a296;
   --topbarColor: #b59f88;
   --accentColor: #edcf90;
+  --card-bg: white;
 }
 
 @media all {
@@ -23,9 +24,15 @@
     border: solid 1px var(--fontColor);
   }
 
+  div.controlbar {
+    position: relative;
+    box-sizing: border-box;
+  }
+
   div.topbar {
     position: relative;
-    height: 30%;
+    box-sizing: border-box;
+    height: 20%;
     width: 100%;
     margin-top: 100px;
     background-color: var(--topbarColor);
@@ -37,6 +44,21 @@
     width: 160px;
     border-radius: 50%;
     margin: 5px;
+  }
+
+  .btn {
+    cursor: pointer;
+    box-sizing: border-box;
+    height: min-content;
+    width: max-content;
+    padding: 4px;
+    background-color: var(--card-bg);
+    color: var(--fontColor);
+    border-radius: 4px;
+  }
+
+  .btn:hover {
+    transform: scale(1.05);
   }
 
   .row {
@@ -144,7 +166,7 @@
     box-sizing: border-box;
     height: 210px;
     width: 140px;
-    background-color: white;
+    background-color: var(--card-bg);
     border-radius: 6px;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
       rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
