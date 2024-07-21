@@ -21,6 +21,8 @@ function switchLang() {
     document.getElementById("descRPS").textContent =
       "Stein-Papier-Schere-Spiel";
     document.getElementById("descSW").textContent = "Stoppuhr in JavaScript";
+    document.getElementById("descKaplan").textContent =
+      "Ein einfaches Adressbuch in Python mit customtkinter GUI.";
   } else if (language == "english") {
     document.getElementById("aboutMe").textContent = "About me";
     document.getElementById("intro").textContent =
@@ -35,5 +37,7 @@ function switchLang() {
       "An ordinary Python Password Generator (but cute)";
     document.getElementById("descRPS").textContent = "Rock Paper Scissors Game";
     document.getElementById("descSW").textContent = "Stopwatch in JavaScript";
+    document.getElementById("descKaplan").textContent =
+      "A simple Address Book in python with customtkinter GUI.";
   }
 }
