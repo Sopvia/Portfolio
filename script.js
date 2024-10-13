@@ -41,3 +41,11 @@ function switchLang() {
       "A simple Address Book in python with customtkinter GUI.";
   }
 }
+
+function openBar() {
+  document.getElementById("controlbar").style.display = "flex";
+}
+
+function closeBar() {
+  document.getElementById("controlbar").style.display = "none";
+}

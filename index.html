@@ -17,13 +17,16 @@
     </head>
     
     <body>
+        <div id="controlbar" class="controlbar column">
+            <button class="closebtn" onclick="closeBar()">&times;</button>
+            <button class="btn" id="langBtn" onclick="switchLang()">De/En</button>    
+        </div>
+
+        <button class="openbtn" onclick="openBar()">&#9776;</button>
+
         <div class="row height-100 width-100">
             <div class="column height-100 width-100">
-                <div class="controlbar row center">
-                    <button class="btn" id="langBtn" onclick="switchLang()">
-                        <p>De/En</p>
-                    </button>
-                </div>
+
                 <div class="topbar row center">
                     <img src="https://avatars.githubusercontent.com/u/112272251?v=4" alt="" class="pb"/>
                 </div>
@@ -48,10 +51,18 @@
                             <h1 id="skills">My Skills</h1>
                         </div>
                         <div class="row center skills">
-                           <img src="img/html.png" alt="Html Logo" class="defaultImg">
-                           <img src="img/css.png" alt="CSS Logo" class="defaultImg">
-                           <img src="img/javascript.png" alt="JavaScript Logo" class="defaultImg">
-                           <img src="img/python.png" alt="Python Logo" class="defaultImg">
+                            <div class="tooltip" data-tooltip="HTML">
+                                <img src="img/html.png" alt="Html Logo" class="defaultImg">
+                            </div>
+                            <div class="tooltip" data-tooltip="CSS">
+                                <img src="img/css.png" alt="CSS Logo" class="defaultImg">
+                            </div>
+                            <div class="tooltip" data-tooltip="JavaScript">
+                                <img src="img/javascript.png" alt="JavaScript Logo" class="defaultImg">
+                            </div>
+                            <div class="tooltip" data-tooltip="Python">
+                                <img src="img/python.png" alt="Python Logo" class="defaultImg">
+                            </div>
                         </div>
                     </div>
                     <div class="column projects height-100 width-50">
