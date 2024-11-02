@@ -22,32 +22,39 @@
             <button class="btn" id="langBtn" onclick="switchLang()">De/En</button>    
         </div>
 
-        <button class="openbtn" onclick="openBar()">&#9776;</button>
+        <button id="openbtn" class="openbtn" onclick="openBar()">&#9776;</button>
 
-        <div class="row height-100 width-100">
-            <div class="column height-100 width-100">
-
-                <div class="topbar row center">
-                    <img src="https://avatars.githubusercontent.com/u/112272251?v=4" alt="" class="pb"/>
-                </div>
+        <div class="main row xs-main">
+            <div class="main left column center">
+                <div class="bigCard column center">
+                    <div class="topbar row center">
+                        <img src="https://avatars.githubusercontent.com/u/112272251?v=4" alt="" class="pb"/>
+                    </div>
         
-                <div class="main row">
-                    <div class="column aboutMe height-100 width-50">
-                        <div class="row p-10 center">
-                            <h1 id="aboutMe" class="">About me</h1>
+                    <div class="row">
+                        <div class="column">
+                            <div class="row p-10 center">
+                                <h1 id="aboutMe" class="">About me</h1>
+                            </div>
+                            <div class="row center p-text">
+                                <p id="intro">Hi, my name is Sophia. I'm currently training to be an IT specialist. At the moment i'm learning Python, Java and GDscript.</p>
+                            </div>
+                            <div class="row center p-text m-15">
+                                <p id="github">Click here for my Github profile.</p>
+                            </div>
+                            <div class="row center p-5">
+                                <a href="https://github.com/Sopvia" target="_blank">
+                                    <img src="img/github.png" alt="Github Logo" class="defaultImg">
+                                </a>
+                            </div>
                         </div>
-                        <div class="row center p-text">
-                            <p id="intro">Hi, my name is Sophia. I'm currently training to be an IT specialist. At the moment i'm learning Python, Java and GDscript.</p>
-                        </div>
-                        <div class="row center p-text m-15">
-                            <p id="github">Click here for my Github profile.</p>
-                        </div>
-                        <div class="row center">
-                            <a href="https://github.com/Sopvia" target="_blank">
-                                <img src="img/github.png" alt="Github Logo" class="defaultImg">
-                            </a>
-                        </div>
-                        <div class="row p-10 center">
+                    </div>    
+                </div>
+            </div>
+            <div class="main column center">
+                <div class="bigCard row center">
+                    <div class="column">
+                        <div class="row">
                             <h1 id="skills">My Skills</h1>
                         </div>
                         <div class="row center skills">
@@ -65,8 +72,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="column projects height-100 width-50">
-                        <div class="row p-10 width-100 center">
+                </div>
+                <div class="bigCard row projects">
+                    <div class="column">
+                        <div class="row center">
                             <h1 id="projects">Projects</h1>
                         </div>
                         <div class="row cards width-100 center">

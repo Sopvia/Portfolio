@@ -1,8 +1,9 @@
 :root {
-  --backgroundColor: white;
+  --backgroundColor: #f5f5f5;
+  --backgroundSecond: grey;
   --fontColor: #816451;
   --dateColor: #b3a296;
-  --topbarColor: #b59f88;
+  --topbarColor: #b59f888e;
   --accentColor: #edcf90;
   --tooltipColor: #edcf908e;
   --card-bg: white;
@@ -18,10 +19,12 @@
     margin: 0;
     padding: 0;
     background-color: var(--backgroundColor);
+    background-image:  linear-gradient(var(--backgroundSecond) 1px, transparent 1px), linear-gradient(to right, var(--backgroundSecond) 1px, var(--backgroundColor) 1px);
+    background-size: 20px 20px;
     color: var(--fontColor);
     font-family: "Poppins", sans-serif;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: hidden;
     border: solid 1px var(--fontColor);
   }
 
@@ -36,9 +39,10 @@
     right: 0;
     background-color: var(--topbarColor);
     overflow-x: hidden;
+    overflow-y: hidden;
     padding: 60px;
     transition: 0.5s;
-    border: solid 2px var(--fontColor);
+    border: none;
   }
 
   div.controlbar .closebtn {
@@ -75,6 +79,7 @@
 
   div.topbar img.pb {
     position: relative;
+    bottom: 20px;
     height: 160px;
     width: 160px;
     border-radius: 50%;
@@ -105,9 +110,21 @@
     flex-direction: row;
   }
 
+  .main.row {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+  }
+
   .column {
     display: flex;
     flex-direction: column;
+  }
+
+  .main.column {
+    display: flex;
+    justify-content: center;
+    width: 50%;
   }
 
   .center {
@@ -147,7 +164,7 @@
   .defaultImg {
     height: 24px;
     width: 24px;
-    margin: 4px;
+    margin: 0 4px 4px 4px;
   }
 
   h1 {
@@ -205,14 +222,28 @@
     opacity: 1;
   }
 
-  .main {
+/*   .main {
     position: relative;
     height: 70%;
     width: 100%;
+  } */
+
+  .bigCard {
+    display: flex;
+    box-sizing: border-box;
+    height: fit-content;
+    width: 75%;
+    margin: 10px;
+    justify-content: center;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--card-bg);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   }
 
-  .aboutMe {
-    box-sizing: border-box;
+  .bigCard.projects {
+    height: 50%;
   }
 
   div.row.p-30 > a {
@@ -222,6 +253,7 @@
 
   .skills {
     box-sizing: border-box;
+    padding: 5px;
   }
 
   .projects {
@@ -233,6 +265,8 @@
     display: flex;
     flex-wrap: wrap;
     padding: 5px;
+    overflow-x: hidden;
+    overflow-y: auto;
   }
 
   .card {
@@ -243,7 +277,7 @@
     border-radius: 6px;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
       rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-    margin: 0 10px 10px 20px;
+    margin: 0 10px 20px 10px;
   }
 
   .card:hover {
@@ -282,11 +316,14 @@
 }
 
 @media (max-width: 576px) {
-  .main {
-    flex-wrap: wrap;
+}
+
+@media (max-width: 1200px) {
+  html, body {
+    overflow-y: auto;
   }
 
-  .aboutMe {
+  .bigCard {
     height: auto !important;
     width: 100% !important;
   }
@@ -294,5 +331,23 @@
   .projects {
     height: auto !important;
     width: 100% !important;
+  }
+
+  .xs-main {
+    flex-direction: column;
+  }
+
+  .main.column {
+    width: 100%;
+  }
+
+  div.controlbar {
+    height: 10%;
+    width: 100vh;
+    align-items: center;
+  }
+
+  .btn {
+    width: 20%;
   }
 }

@@ -44,8 +44,10 @@ function switchLang() {
 
 function openBar() {
   document.getElementById("controlbar").style.display = "flex";
+  document.getElementById("openbtn").style.display = "none";
 }
 
 function closeBar() {
   document.getElementById("controlbar").style.display = "none";
+  document.getElementById("openbtn").style.display = "block";
 }
