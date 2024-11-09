@@ -7,6 +7,8 @@ function switchLang() {
   }
 
   if (language == "german") {
+    document.getElementById("welcomeBg").textContent = "Wilkommen";
+    document.getElementById("welcomeFg").textContent = "Wilkommen auf meiner Seite";
     document.getElementById("aboutMe").textContent = "Über mich";
     document.getElementById("intro").textContent =
       "Hallo, mein Name ist Sophia. Ich mache gerade eine Ausbildung zur Fachinformatikerin. Im Moment lerne ich Python, Java und GDscript.";
@@ -24,6 +26,8 @@ function switchLang() {
     document.getElementById("descKaplan").textContent =
       "Ein einfaches Adressbuch in Python mit customtkinter GUI.";
   } else if (language == "english") {
+    document.getElementById("welcomeBg").textContent = "Welcome";
+    document.getElementById("welcomeFg").textContent = "Welcome to my Page";
     document.getElementById("aboutMe").textContent = "About me";
     document.getElementById("intro").textContent =
       "Hi, my name is Sophia. I'm currently training to be an IT specialist. At the moment i'm learning Python, Java and GDscript.";
@@ -40,6 +44,10 @@ function switchLang() {
     document.getElementById("descKaplan").textContent =
       "A simple Address Book in python with customtkinter GUI.";
   }
+}
+
+function jump() {
+  document.getElementById("content").scrollIntoView();
 }
 
 function openBar() {
