@@ -56,7 +56,7 @@
 
   section.welcome div {
     display: flex;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     position: relative;
   }
@@ -182,6 +182,7 @@
     height: 100%;
     width: 100%;
     padding: 20px;
+    height: fit-content;
   }
 
   .column {
@@ -193,6 +194,7 @@
     box-sizing: border-box;
     height: 100%;
     width: 80%;
+    padding: 10px;
   }
 
   .center {
@@ -404,11 +406,6 @@
 
 @media (max-width: 1200px) {
   .bigCard {
-    height: auto !important;
-    width: 100% !important;
-  }
-
-  .projects {
     height: auto !important;
     width: 100% !important;
   }
