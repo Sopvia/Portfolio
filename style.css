@@ -1,12 +1,13 @@
 :root {
-  --backgroundColor: #1C3144;
-  --backgroundSecond: grey;
-  --fontColor: #c5a28b;
-  --dateColor: #b3a296;
-  --topbarColor: #ebd2be8a;
-  --accentColor: #916953;
-  --tooltipColor: #916953;
+  --backgroundColor: #111111;
+  --backgroundSecond: rgb(48, 0, 58);
+  --fontColor: white;
+  --dateColor: #eeee;
+  --topbarColor: #131313;
+  --accentColor: #e91e63;
+  --tooltipColor: #E4FF1A;
   --card-bg: white;
+  --welcome: 'Welcome';
 }
 
 @media all {
@@ -18,12 +19,10 @@
     width: 100%;
     margin: 0;
     padding: 0;
-    background-color: var(--backgroundColor);
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAAUVBMVEWFhYWDg4N3d3dtbW17e3t1dXWBgYGHh4d5eXlzc3OLi4ubm5uVlZWPj4+NjY19fX2JiYl/f39ra2uRkZGZmZlpaWmXl5dvb29xcXGTk5NnZ2c8TV1mAAAAG3RSTlNAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEAvEOwtAAAFVklEQVR4XpWWB67c2BUFb3g557T/hRo9/WUMZHlgr4Bg8Z4qQgQJlHI4A8SzFVrapvmTF9O7dmYRFZ60YiBhJRCgh1FYhiLAmdvX0CzTOpNE77ME0Zty/nWWzchDtiqrmQDeuv3powQ5ta2eN0FY0InkqDD73lT9c9lEzwUNqgFHs9VQce3TVClFCQrSTfOiYkVJQBmpbq2L6iZavPnAPcoU0dSw0SUTqz/GtrGuXfbyyBniKykOWQWGqwwMA7QiYAxi+IlPdqo+hYHnUt5ZPfnsHJyNiDtnpJyayNBkF6cWoYGAMY92U2hXHF/C1M8uP/ZtYdiuj26UdAdQQSXQErwSOMzt/XWRWAz5GuSBIkwG1H3FabJ2OsUOUhGC6tK4EMtJO0ttC6IBD3kM0ve0tJwMdSfjZo+EEISaeTr9P3wYrGjXqyC1krcKdhMpxEnt5JetoulscpyzhXN5FRpuPHvbeQaKxFAEB6EN+cYN6xD7RYGpXpNndMmZgM5Dcs3YSNFDHUo2LGfZuukSWyUYirJAdYbF3MfqEKmjM+I2EfhA94iG3L7uKrR+GdWD73ydlIB+6hgref1QTlmgmbM3/LeX5GI1Ux1RWpgxpLuZ2+I+IjzZ8wqE4nilvQdkUdfhzI5QDWy+kw5Wgg2pGpeEVeCCA7b85BO3F9DzxB3cdqvBzWcmzbyMiqhzuYqtHRVG2y4x+KOlnyqla8AoWWpuBoYRxzXrfKuILl6SfiWCbjxoZJUaCBj1CjH7GIaDbc9kqBY3W/Rgjda1iqQcOJu2WW+76pZC9QG7M00dffe9hNnseupFL53r8F7YHSwJWUKP2q+k7RdsxyOB11n0xtOvnW4irMMFNV4H0uqwS5ExsmP9AxbDTc9JwgneAT5vTiUSm1E7BSflSt3bfa1tv8Di3R8n3Af7MNWzs49hmauE2wP+ttrq+AsWpFG2awvsuOqbipWHgtuvuaAE+A1Z/7gC9hesnr+7wqCwG8c5yAg3AL1fm8T9AZtp/bbJGwl1pNrE7RuOX7PeMRUERVaPpEs+yqeoSmuOlokqw49pgomjLeh7icHNlG19yjs6XXOMedYm5xH2YxpV2tc0Ro2jJfxC50ApuxGob7lMsxfTbeUv07TyYxpeLucEH1gNd4IKH2LAg5TdVhlCafZvpskfncCfx8pOhJzd76bJWeYFnFciwcYfubRc12Ip/ppIhA1/mSZ/RxjFDrJC5xifFjJpY2Xl5zXdguFqYyTR1zSp1Y9p+tktDYYSNflcxI0iyO4TPBdlRcpeqjK/piF5bklq77VSEaA+z8qmJTFzIWiitbnzR794USKBUaT0NTEsVjZqLaFVqJoPN9ODG70IPbfBHKK+/q/AWR0tJzYHRULOa4MP+W/HfGadZUbfw177G7j/OGbIs8TahLyynl4X4RinF793Oz+BU0saXtUHrVBFT/DnA3ctNPoGbs4hRIjTok8i+algT1lTHi4SxFvONKNrgQFAq2/gFnWMXgwffgYMJpiKYkmW3tTg3ZQ9Jq+f8XN+A5eeUKHWvJWJ2sgJ1Sop+wwhqFVijqWaJhwtD8MNlSBeWNNWTa5Z5kPZw5+LbVT99wqTdx29lMUH4OIG/D86ruKEauBjvH5xy6um/Sfj7ei6UUVk4AIl3MyD4MSSTOFgSwsH/QJWaQ5as7ZcmgBZkzjjU1UrQ74ci1gWBCSGHtuV1H2mhSnO3Wp/3fEV5a+4wz//6qy8JxjZsmxxy5+4w9CDNJY09T072iKG0EnOS0arEYgXqYnXcYHwjTtUNAcMelOd4xpkoqiTYICWFq0JSiPfPDQdnt+4/wuqcXY47QILbgAAAABJRU5ErkJggg==);
+    background-color: var(--backgroundSecond);
     color: var(--fontColor);
     font-family: "Poppins", sans-serif;
-    font-size: 18px;
-    border: solid 1px var(--fontColor);
+    font-size: 20px;
     overflow: hidden;
   }
 
@@ -49,8 +48,8 @@
   }
 
   section.welcome {
+    color: white;
     background-color: var(--backgroundColor);
-    font-size: 80px;
     text-transform: uppercase;
   }
 
@@ -61,20 +60,70 @@
     position: relative;
   }
 
-  section.welcome .bgText {
-    width: 100%;
-    font-size: 300px;
-    color: var(--fontColor);
-    z-index: 1;
-    opacity: 10%;
+  hr.vertical {
+    height: 50%;
+    border: 0;
+    display: block;
+    align-self: center;
+    border-left: solid 1px var(--accentColor);
   }
 
-  section.welcome .fgText {
-    width: 100%;
-    z-index: 2;
+  section.welcome .glitch  {
     position: absolute;
-    word-break: break-word;
-    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 120px;
+    letter-spacing: 8px;
+  }
+
+  .glitch::before, .glitch::after {
+    content: var(--welcome);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .glitch::before {
+    animation: glitch 0.3s linear 6;
+    animation-iteration-count: infinite;
+    color: #e91e63;
+    z-index: -2;
+  }
+
+  .glitch::after {
+    animation: glitch 0.3s linear 6 reverse;
+    animation-iteration-count: infinite;
+    color: #2196f3;
+    z-index: -1;
+  }
+
+  @keyframes glitch {
+    0% {
+      top: 0;
+      left: 0;
+    }
+    20% {
+      top: -5px;
+      left: -5px;
+    }
+    40% {
+      top: 5px;
+      left: 5px;
+    }    
+    60% {
+      top: -5px;
+      left: 5px;
+    }    
+    80% {
+      top: 5px;
+      left: -5px;
+    }
+    100% {
+      top: 0;
+      left: 0;
+    }
   }
 
   section.welcome .arrow {
@@ -104,13 +153,39 @@
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: var(--topbarColor);
+    background-color: var(--accentColor);
     overflow-x: hidden;
     overflow-y: hidden;
     padding: 60px;
     transition: 0.5s;
     border: none;
+    clip-path: polygon(100% 0, 100% 24%, 100% 29%, 100% 53%, 100% 58%, 100% 100%, 26% 100%, 0 81%, 0% 35%, 0 0);
   }
+
+  .controlbar::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 1px;
+    left: 1px;
+    right: 1px;
+    bottom: 1px;
+    border: none;
+    background: rgb(38, 0, 46);
+    clip-path: polygon(100% 0, 100% 24%, 100% 29%, 100% 53%, 100% 58%, 100% 100%, 26% 100%, 0 81%, 0% 35%, 0 0);
+ }
+ 
+ .border::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border: 5px solid #e0b1cb;
+    background: #fff;
+ }
 
   div.controlbar .closebtn {
     cursor: pointer;
@@ -139,19 +214,23 @@
   div.topbar {
     position: relative;
     box-sizing: border-box;
-    height: 20%;
-    width: 100%;
+    height: 40%;
+    width: 40%;
     margin-top: 100px;
-    background-color: var(--topbarColor);
+    background-color: transparent;
   }
 
   div.topbar img.pb {
     position: relative;
-    bottom: 20px;
     height: 160px;
     width: 160px;
-    border-radius: 50%;
     margin: 5px;
+    padding: 5px;
+    border-bottom: solid 1px var(--accentColor);
+  }
+
+  .introText {
+    width: 50%;
   }
 
   .btn {
@@ -161,11 +240,12 @@
     width: 90%;
     padding: 4px;
     margin: 10px;
-    background-color: var(--card-bg);
-    color: var(--fontColor);
-    border-radius: 4px;
+    background-color: var(--tooltipColor);
+    color: #111111;
     position: absolute;
     align-self: center;
+    border: 2px solid black;
+    clip-path: polygon(50% 0%, 100% 0, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 0 0);
   }
 
   .btn:hover {
@@ -195,6 +275,7 @@
     height: 100%;
     width: 80%;
     padding: 10px;
+    overflow-y: scroll;
   }
 
   .center {
@@ -203,15 +284,7 @@
     justify-content: center;
   }
 
-  .height-100 {
-    height: 100%;
-  }
-
-  .width-100 {
-    width: 100%;
-  }
-
-  .width-50 {
+  .row.center.p-text p {
     width: 50%;
   }
 
@@ -264,6 +337,8 @@
 
   div.tooltip {
     position: relative;
+    color: #111111;
+    font-size: 18px;
   }
 
   div.tooltip::after {
@@ -275,21 +350,22 @@
     padding: 5px 10px;
     white-space: nowrap;
     opacity: 0;
-    transition : all 0.4s ease;
+    transition : all 0.2s ease;
+    clip-path: polygon(50% 0%, 100% 0, 100% 60%, 75% 100%, 25% 100%, 0 100%, 0 0);
   }
 
   div.tooltip::before {
     content: "";
     position: absolute;
-    width: 0;
+    width: 20px;
     height: 0;
-    border-bottom: 10px solid var(--tooltipColor);
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    transition : all 0.4s ease;
+    border-bottom: 20px solid var(--tooltipColor);
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    transition : all 0.2s ease;
     opacity: 0;
-    left: 20%;
-    top: 75%;
+    left: 10%;
+    top: 88%;
   }
 
   div.tooltip:hover:after, div:hover:before {
@@ -299,13 +375,53 @@
   .bigCard {
     display: flex;
     box-sizing: border-box;
-    height: fit-content;
+    height: 100%;
     width: 75%;
     margin: 10px;
+    padding: 10px;
+    position: relative;
     justify-content: center;
-    border: 2px solid;
-    border-image: linear-gradient(to bottom, #6C969D, #6C969D) 0 1;
     background-color: transparent;
+    clip-path: polygon(100% 0, 100% 24%, 100% 29%, 100% 53%, 100% 58%, 100% 100%, 26% 100%, 0 81%, 0% 35%, 0 0);
+  }
+
+  .bigCard.projects {
+    clip-path: none;
+  }
+
+  .bigCard::before {
+    box-sizing: border-box;
+    display: block;
+    content: "";
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    margin: 5px;
+    top: 5px;
+    left: 5px;
+    border-top: 1px solid var(--accentColor);
+    border-left: 1px solid #e91e63;
+  }
+
+  .bigCard.skillOverview::before {
+    height: 100px;
+  }
+
+  .bigCard.skillOverview::after {
+    height: 100px;
+  }
+  
+  .bigCard::after {
+      box-sizing: border-box;
+      display: block;
+      content: "";
+      width: 250px;
+      height: 250px;
+      position: absolute;
+      bottom: 5px;
+      right: 5px;
+      border-bottom: 1px solid var(--accentColor);
+      border-right: 1px solid var(--accentColor);
   }
 
   div.row.p-30 > a {
@@ -313,9 +429,16 @@
     text-decoration: none;
   }
 
+  .aboutMe {
+    position: relative;
+    z-index: 1;
+  }
+
   .skills {
     box-sizing: border-box;
     padding: 5px;
+    position: relative;
+    z-index: 1;
   }
 
   .projects {
@@ -324,30 +447,31 @@
 
   .cards {
     box-sizing: border-box;
+    height: 100%;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     padding: 5px;
     overflow-x: hidden;
     overflow-y: auto;
+    position: relative;
+    z-index: 1;
   }
 
   .card {
     box-sizing: border-box;
     height: 100px;
-    width: 100%;
-    background-color: var(--card-bg);
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-      rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    width: 50%;
+    background-color: transparent;
     margin: 0 10px 0 10px;
     text-align: start;
     overflow-y: hidden;
     overflow-x: hidden;
   }
 
-  .card:hover {
+  a.card:hover {
     cursor: pointer;
-    background-color: var(--accentColor);
+    border: 1px var(--accentColor) solid;
   }
 
   .text {
@@ -357,6 +481,8 @@
   .title {
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
   }
 
   .date {
@@ -379,50 +505,68 @@
   }
 }
 
-@media (max-width: 630px) {
-  section.welcome .bgText {
+@media (max-width: 450px) {
+  .bigCard::before {
+    margin: 0;
+    left: 0;
+    width: 100% !important;
+    border-left: none;
+  }
+
+  .bigCard::after {
+    border: none;
+  }
+
+  .title {
+    word-break: word-break;
+  }
+
+  div.tooltip::before {
+    display: none;
+  }
+
+  div.tooltip::after {
     display: none;
   }
 }
 
 @media (max-width: 700px) {
+  .bigCard::before {
+    height: 100px;
+    width: 100px;
+  }
+
+  .bigCard::after {
+    height: 100px;
+    width: 100px;
+  }
+
   div.controlbar {
     height: 10%;
     width: 100%;
     align-items: center;
   }
 
-  .btn {
-    width: 20%;
-  }
-}
-
-@media (max-width: 1000px) {
-  section.welcome .bgText {
-    font-size: 100px;
-    word-break: break-word;
-  }
-}
-
-@media (max-width: 1200px) {
-  .bigCard {
-    height: auto !important;
-    width: 100% !important;
+  div.topbar img.pb {
+    height: 100px;
+    width: 40vw;
   }
 
-  .xs-main {
-    flex-direction: column;
-    overflow-y: scroll;
-  }
-
-  .main.column {
+  .card {
     width: 100%;
+    height: fit-content;
   }
 }
 
-@media (max-width: 1500px) {
-  section.welcome .bgText {
-    font-size: 200px;
-    word-break: break-word;
+@media (max-width: 800px) {
+  section.welcome .glitch {
+    font-size: 10vw;
+  }
+}
+
+@media (min-width: 1000px) {
+  .bigCard {
+    height: 100% !important;
+    width: 100% !important;
   }
 }

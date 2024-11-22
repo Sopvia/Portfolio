@@ -19,10 +19,10 @@
     <body>
         
         <div class="container">
-            <section class="welcome">
-                <div class="center">
-                    <p id="welcomeBg" class="bgText">Welcome</p>
-                    <p id="welcomeFg" class="fgText">Welcome to my Page</p>
+            <section class="welcome center">
+                <div>
+                    <hr class="vertical">
+                    <p id="welcomeBg" class="glitch">Welcome</p>
                     <button class="arrow" onclick="jump()">&#8964;</button>    
                 </div>
             </section>
@@ -35,7 +35,7 @@
     
                 <button id="openbtn" class="openbtn" onclick="openBar()">&#9776;</button>
     
-                <div class="main column xs-main">
+                <div class="main column">
                     
                     <div class="main row center">
                         <div class="bigCard column center">
@@ -43,7 +43,7 @@
                                 <img src="https://avatars.githubusercontent.com/u/112272251?v=4" alt="" class="pb"/>
                             </div>
                 
-                            <div class="row">
+                            <div class="row aboutMe">
                                 <div class="column">
                                     <div class="row p-10 center">
                                         <h1 id="aboutMe" class="">About me</h1>
@@ -51,7 +51,7 @@
                                     <div class="row center p-text">
                                         <p id="intro">Hi, my name is Sophia. I'm currently training to be an IT specialist. At the moment i'm learning Python, Java and GDscript.</p>
                                     </div>
-                                    <div class="row center text p-text m-15">
+                                    <div class="row center p-text m-15">
                                         <p id="github">Click here for my Github profile.</p>
                                     </div>
                                     <div class="row center p-5">
@@ -61,11 +61,11 @@
                                     </div>
                                 </div>
                             </div>    
-                        </div>
+                        </div>    
                     </div>
                     
                     <div class="main row center">
-                        <div class="bigCard">
+                        <div class="bigCard skillOverview">
                             <div class="column">
                                 <div class="row">
                                     <h1 id="skills">My Skills</h1>
@@ -89,91 +89,91 @@
                     </div>
                     <div class="main row center">
                         <div class="bigCard projects">
-                            <div class="column width-100">
+                            <div class="column">
                                 <div class="row center">
                                     <h1 id="projects">Projects</h1>
                                 </div>
-                                <div class="row cards height-100 width-100 center">
-                                    <a class="card center p-10" href="https://github.com/Sopvia/Kaplan" target="_blank">
+                                <div class="row cards center">
+                                    <a class="card center" href="https://github.com/Sopvia/Kaplan" target="_blank">
                                         <div class="column">
                                             <div class="row">
                                                 <div class="lang">
                                                     <img src="img/python.png" alt="Python Logo" class="defaultImg">
                                                 </div>
-                                                <div class="title width-100">
+                                                <div class="title">
                                                     <h3>Kaplan</h3>
                                                     <span class="date">14/07/2024</span> 
                                                 </div>
                                             </div>   
-                                            <div class="row text height-100 width-100">
+                                            <div class="row text">
                                                 <span id="descKaplan" class="desc">A simple Address Book in python with customtkinter GUI.</span>    
                                             </div>
                                         </div>
                                     </a>
                                     <hr>
-                                    <a class="card center p-10" href="https://github.com/Sopvia/Sprite" target="_blank">
+                                    <a class="card center" href="https://github.com/Sopvia/Sprite" target="_blank">
                                         <div class="column">
                                             <div class="row">
                                                 <div class="lang">
                                                     <img src="img/godot.png" alt="Godot Logo" class="defaultImg">
                                                 </div>
-                                                <div class="title width-100">
+                                                <div class="title">
                                                     <h3>Sprite</h3>
                                                     <span class="date">02/07/2024</span>    
                                                 </div>
                                             </div>   
-                                            <div class="row text height-100 width-100">
+                                            <div class="row text">
                                                 <span id="descSprite" class="desc">A simple 2D Jump 'n' Run game to explore Godot.</span>    
                                             </div>                                 
                                         </div>
                                     </a>
                                     <hr>
-                                    <a class="card center p-10" href="https://github.com/Sopvia/PY" target="_blank">
+                                    <a class="card center" href="https://github.com/Sopvia/PY" target="_blank">
                                         <div class="column">
                                             <div class="row">
                                                 <div class="lang">
                                                     <img src="img/python.png" alt="Python Logo" class="defaultImg">
                                                 </div>
-                                                <div class="title width-100">
+                                                <div class="title">
                                                     <h3>PY</h3>
                                                     <span class="date">02/05/2024</span>    
                                                 </div>
                                             </div>   
-                                            <div class="row text height-100 width-100">
+                                            <div class="row text">
                                                 <span id="descPY" class="desc">An ordinary Python Password Generator (but cute).</span>    
                                             </div>                                 
                                         </div>
                                     </a>
                                     <hr>
-                                    <a class="card center p-10" href="https://github.com/Sopvia/RPS" target="_blank">
+                                    <a class="card center" href="https://github.com/Sopvia/RPS" target="_blank">
                                         <div class="column">
                                             <div class="row">
                                                 <div class="lang">
                                                     <img src="img/python.png" alt="Python Logo" class="defaultImg">
                                                 </div>
-                                                <div class="title width-100">
+                                                <div class="title">
                                                     <h3>RPS</h3>
                                                     <span class="date">26/04/2024</span>    
                                                 </div>
                                             </div>   
-                                            <div class="row text height-100 width-100">
+                                            <div class="row text">
                                                 <span id="descRPS" class="desc">Rock Paper Scissors Game</span>    
                                             </div>                                 
                                         </div>
                                     </a>
                                     <hr>
-                                    <a class="card center p-10" href="https://github.com/Sopvia/Stopwatch.js" target="_blank">
+                                    <a class="card center" href="https://github.com/Sopvia/Stopwatch.js" target="_blank">
                                         <div class="column">
                                             <div class="row">
                                                 <div class="lang">
                                                     <img src="img/javascript.png" alt="JavaScript Logo" class="defaultImg">
                                                 </div>
-                                                <div class="title width-100">
+                                                <div class="title">
                                                     <h3>Stopwatch.js</h3>
                                                     <span class="date">14/06/2023</span>    
                                                 </div>
                                             </div>   
-                                            <div class="row text height-100 width-100">
+                                            <div class="row text">
                                                 <span id="descSW" class="desc">Stopwatch in JavaScript</span>    
                                             </div>                                 
                                         </div>
